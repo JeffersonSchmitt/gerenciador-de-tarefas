@@ -1,9 +1,12 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { TaskFilters } from './components/task-filters/task-filters';
+import { MatIcon } from "@angular/material/icon";
+import { MatToolbar } from '@angular/material/toolbar';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [CommonModule, TaskFilters, MatIcon,MatToolbar],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

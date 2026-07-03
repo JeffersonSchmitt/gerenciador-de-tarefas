@@ -1,1 +1,30 @@
-<p>task-filters works!</p>
+<div class="filters-container">
+<mat-form-field appearance="outline">
+  <mat-label>Pesquisar tarefas</mat-label>
+  <input matInput placeholder="Estudar..." [ngModel]="search()" (ngModelChange)="updateSearch($event)" />
+</mat-form-field>
+
+<!-- Filtro de prioridade -->
+<mat-form-field appearance="outline">
+  <mat-label>Prioridade</mat-label>
+  <mat-select [ngModel]="priority()" (ngModelChange)="updatePriority($event)">
+    @for(priority of priorities; track priority) {
+      <mat-option [value]="priority">{{ priority }}</mat-option>
+    }
+  </mat-select>
+</mat-form-field>
+
+<!-- Filtro de status -->
+<mat-form-field appearance="outline">
+  <mat-label>Status</mat-label>
+  <mat-select [ngModel]="status()" (ngModelChange)="updateStatus($event)">
+    @for(status of statuses; track status) {
+      <mat-option [value]="status">{{ status }}</mat-option>
+    }
+  </mat-select>
+</mat-form-field>
+<button mat-stroked-button color="warn" (click)="reset()">
+  <mat-icon>restart_alt</mat-icon>
+  Resetar filtros
+</button>
+</div>
