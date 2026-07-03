@@ -42,3 +42,6 @@ __screenshots__/
 # System files
 .DS_Store
 Thumbs.db
+.vscode/extensions.json
+.vscode/settings.json
+.vscode/extensions.json

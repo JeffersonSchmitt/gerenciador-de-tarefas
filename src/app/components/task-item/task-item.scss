@@ -1,0 +1,38 @@
+mat-card {
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
+  &.completed {
+    opacity: 0.6;
+
+    .title {
+      text-decoration: line-through;
+    }
+  }
+}
+.task-content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.task-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.title {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.baixa {
+  background-color: #e8f5e9 !important;
+  color: #2e7d32 !important;
+}
+.média {
+  background-color: #fff3e0 !important;
+  color: #ef6c00 !important;
+}
+.alta {
+  background-color: #ffebee !important;
+  color: #c62828 !important;
+}

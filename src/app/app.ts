@@ -3,10 +3,11 @@ import { TaskFilters } from './components/task-filters/task-filters';
 import { MatIcon } from "@angular/material/icon";
 import { MatToolbar } from '@angular/material/toolbar';
 import { CommonModule } from '@angular/common';
+import { TaskItem } from './components/task-item/task-item';
 
 @Component({
   selector: 'app-root',
-  imports: [CommonModule, TaskFilters, MatIcon,MatToolbar],
+  imports: [CommonModule, TaskFilters, MatIcon,MatToolbar,TaskItem],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
