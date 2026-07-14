@@ -1,1 +1,24 @@
-<p>task-stats works!</p>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Dashboard de Progresso</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="stats-grid">
+      <div class="stats-item">
+        <span class="label">Total</span>
+        <span class="value">{{ stats().total }}</span>
+      </div>
+      <div class="stats-item">
+        <span class="label">Concluídas</span>
+        <span class="value">{{ stats().completed }}</span>
+      </div>
+    </div>
+    <div class="progress-section">
+      <div class="progress-header">
+        <span>Conclusão</span>
+        <span>{{ stats().progress }}%</span>
+      </div>
+      <mat-progress-bar mode="determinate" [value]="stats().progress"></mat-progress-bar>
+    </div>
+  </mat-card-content>
+</mat-card>

@@ -11,6 +11,7 @@ import { Task } from '../../models/task.model';
   imports: [CommonModule, MatCardModule, MatCheckboxModule, MatIconModule, MatChipsModule],
   templateUrl: './task-item.html',
   styleUrl: './task-item.scss',
+  standalone: true,
 })
 export class TaskItem {
   task = input.required<Task>();

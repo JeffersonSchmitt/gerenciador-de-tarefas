@@ -1,0 +1,41 @@
+.stats-card {
+  margin-bottom: 24px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+.stats-card ::ng-deep .mat-mdc-card-title {
+  color: white;
+}
+.stats-grid {
+  display: flex;
+  gap: 32px;
+  margin: 20px 0;
+}
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+.stat-item .label {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+.stat-item .value {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.progress-section {
+  margin-bottom: 16px;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+mat-progress-bar {
+  height: 8px;
+  border-radius: 4px;
+}

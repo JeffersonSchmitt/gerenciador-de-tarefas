@@ -24,6 +24,7 @@ import { MatSelectModule } from '@angular/material/select';
   ],
   templateUrl: './task-list.html',
   styleUrl: './task-list.scss',
+  standalone: true,
 })
 export class TaskList {
   private taskService = inject(TaskService);
