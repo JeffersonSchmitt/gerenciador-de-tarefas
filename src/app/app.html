@@ -3,6 +3,13 @@
   <span>Gerenciador de Tarefas</span>
 </mat-toolbar>
 <main class="container">
-  <!-- @defer (on idle; on hover) {} -->
+  @defer (on idle; on hover) {
+    <app-task-stats />
+  } @placeholder {
+    <div class="statis-placeholder">Carregando...</div>
+  } @error {
+    <div class="statis-placeholder">Erro ao carregar estatísticas.</div>
+  }
   <app-task-filters />
+  <app-task-list />
 </main>

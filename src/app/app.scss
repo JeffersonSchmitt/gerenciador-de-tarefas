@@ -1,0 +1,23 @@
+.container {
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 0 20px;
+}
+
+.stats-placeholder {
+  height: 150px;
+  background: #eee;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  color: #888;
+  font-style: italic;
+}
+
+mat-toolbar {
+  display: flex;
+  gap: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
